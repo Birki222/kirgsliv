@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -90,9 +89,8 @@
     <p>Тысячи учеников уже применяют её и зарабатывают</p>
     <p><span class="highlight">Бесплатное обучение</span> без паспорта, без вложений</p>
     <p>Работает с телефона. Всего 10–15 минут в день</p>
-    <a href="https://t.me/+VI-uDU7GNVQyZGQ1" class="btn" onclick="fbq('track', 'Contact')">Перейти в Telegram</a>
-
-  <p class="spots">Осталось 17 мест на май</p>
+    <a href="https://t.me/+VI-uDU7GNVQyZGQ1" class="btn" target="_blank" rel="noopener noreferrer" onclick="fbq('track', 'Contact')">Перейти в Telegram</a>
+    <p class="spots">Осталось 17 мест на май</p>
     <div class="timer" id="timer">00:10:00</div>
   </div>
 
@@ -102,8 +100,8 @@
     function updateTimer() {
       let mins = Math.floor(seconds / 60);
       let secs = seconds % 60;
-      timerElement.textContent = 
-        (mins < 10 ? "0" + mins : mins) + ":" + 
+      timerElement.textContent =
+        (mins < 10 ? "0" + mins : mins) + ":" +
         (secs < 10 ? "0" + secs : secs);
       if (seconds > 0) {
         seconds--;
